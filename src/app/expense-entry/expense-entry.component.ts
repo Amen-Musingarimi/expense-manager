@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './expense-entry.component.css'
 })
 export class ExpenseEntryComponent {
+  title!: string;
 
+  constructor() {}
+
+  ngOnInit() {
+    this.title = 'Expense Entry';
+  }
 }
